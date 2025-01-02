@@ -1,0 +1,14 @@
+.actions {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  gap: 10px; /* Add spacing between elements */
+}
+
+.search-input {
+  padding: 10px 30px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+
