@@ -40,8 +40,8 @@ function BookTable() {
   useEffect(() => {
     const results = books.filter(
       (book) =>
-        book.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
-        book.author.toLowerCase().includes(searchTerm.toLowerCase())
+        book.name?.toLowerCase().includes(searchTerm.toLowerCase()) || // Check if book.name exists
+        book.author?.toLowerCase().includes(searchTerm.toLowerCase()) // Check if book.author exists
     );
     setFilteredBooks(results);
   }, [searchTerm, books]);
